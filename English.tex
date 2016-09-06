@@ -21,13 +21,20 @@
 %\showthe\tmp
 \setlength{\parindent}{0pt} % Do not indent every paragraph
 
-
-
 \renewcommand{\baselinestretch}{0.97}
-\newcommand\ex[1]{\textit{\textbf{{#1}}}}
-\newcommand\sex[1]{\textit{\textbf{{\small {#1}}}}}
+
+
+\newcommand\ex[1]{\textit{\textbf{{#1}}}}           % Example
+\newcommand\sex[1]{\textit{\textbf{{\small {#1}}}}} % Small Example
+\newcommand\za{\_\thinspace }                         % Zero Article
+
 
 \begin{document}
+
+% Thinner bullet in lists see
+% http://tex.stackexchange.com/questions/8510/reduce-size-of-bullet-character-in-lists
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
 
 %================================================================================================
 %================================================================================================
@@ -203,7 +210,7 @@ that describes someone or something that makes you laugh: \textit{Bob's jokes ar
 %================================================================================================
 
 \newpage
-\setcounter{secnumdepth}{2} % Enumerate only Sections (1) and SubSecions (2)
+\setcounter{secnumdepth}{3} % Enumerate only Sections (1) and SubSecions (2)
 \twocolumn[\section{The United Kingdom. 2016.}]
 
 \subsection{Phrases from speech}
@@ -288,7 +295,7 @@ that describes someone or something that makes you laugh: \textit{Bob's jokes ar
 \item[Turn over] переворачивать.
 \end{description}
 
-\subsubsection{Phrases verbs}
+\subsubsection{Saying, idioms}
 \begin{description}[leftmargin=\OriginalParIndent,style=nextline,before={\renewcommand\makelabel[1]{##1 ~---}}]
 \item[Bad hair day] a day on which everything seems to go wrong.
 \item[Can't stand / Can't bear] means to be unable to tolerate somebody or something.
@@ -334,6 +341,124 @@ Smith, where Jones had had ``had'', had had ``had had''. ``Had had'' had had exa
 %================================================================================================
 \subsection{Pronouns}
 I don’t like vegetables, I don't like \sout{it} \textbf{them}.
+
+
+
+%================================================================================================
+\subsection{Plural forms}
+Nouns ending in -o: \ex{tomatoes}.
+
+Irregular: \ex{foot~-- feet}, \ex{tooth~-- teeth}.
+
+Does not change in plural: \ex{deer}, \ex{shrimp}, \ex{moose}, \ex{fish}.
+
+
+
+
+%================================================================================================
+\subsection{Expressing probability}
+Might, could.
+
+\ex{Might} not necessarily mean past! \ex{Could} imply several choices: We could go to the cinema, or we could listen to music.
+
+
+
+
+
+
+%================================================================================================
+\subsection{Articles}
+
+\subsubsection{Fixed expressions}
+\begin{description}[leftmargin=0.3cm,style=nextline,before={\renewcommand\makelabel[1]{##1 }}]
+\begin{minipage}{0.3\linewidth}
+  \item[] the sea
+  \item[] the environment
+  \item[] the country
+  \item[] the internet
+  \item[] the cinema
+  \item[] the theatre
+  \item[] the opera
+  \item[] the radio
+  \item[] the navy
+  \item[] the army
+  \item[] the air force
+  \item[] the police
+\end{minipage}
+\hspace{10mm}
+\begin{minipage}{0.5\linewidth}
+  \item[] the bank
+  \item[] the post office
+  \item[] the cinema
+  \item[] the station
+  \item[] the store
+  \item[] the doctor
+  \item[] the dentist
+  \item[] the airport: they are building a new airport (a kind of airport), because the old airport is not big enough (a specific one)
+\end{minipage}
+\end{description}
+
+
+\begin{multicols}{3}
+at the top
+
+at the bottom
+
+in the middle
+
+at the centre
+
+on the right/left
+
+at the end
+\end{multicols}
+
+\begin{multicols}{3}
+\za lunch
+\za breakfast
+\za dinner
+\end{multicols}
+
+He will go at \za school. Если можно переформулировать без school, например: он пойдет учиться.
+
+He will go at \textbf{the} school, where his parents work. Если имеется в виду конкретное здание (specific place), а не процесс.
+
+Вместо \ex{school} могут быть: \ex{hospital}, \ex{bed}, \ex{university}, \ex{jail}, \ex{prison}, \ex{college}.
+
+
+
+\subsubsection{Buildings / Places.}
+Places used \textbf{without the}:
+\begin{description}[labelindent=\OriginalParIndent,leftmargin=3.6cm,style=nextline,before={\renewcommand\makelabel[1]{##1 :}}]
+  \item[Streets, roads] Fleet Street.
+  \item[Name + building] Oxford University.
+  \item[Airports] Heathrow airport.
+  \item[Parks] Hyde Park.
+\end{description}
+
+
+\vspace{2mm}
+Places used \textbf{with the}:
+\begin{description}[labelindent=\OriginalParIndent,leftmargin=3.9cm,style=nextline,before={\renewcommand\makelabel[1]{##1 :}}]
+  \item[Hotels] The Hilton Hotel.
+  \item[Theaters, cinemas, operas] The Sydney Opera.
+  \item[Museums] The British Museum.
+  \item[Monuments, towers] The London Eye.
+  \item[Names with ``of''] The University of Oxford. (But, Oxford University, see above.)
+\end{description}
+
+If any of those (restaurant, hotel, \dots) named after people, whose name ends with -s, -s’ or -’s do not use \ex{the}: \ex{\za St James’ Church}.
+
+
+
+\subsubsection{Companies / Organizations.}
+We do not use \ex{the} with names of companies: \za Google, \za Adidas.
+
+We often use \ex{the} with names of organizations and newspapers:
+\ex{The} United Nations, \ex{The} New York Times.
+
+\subsubsection{Geographical areas.}
+
 
 
 \end{document}
