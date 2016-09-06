@@ -3,7 +3,7 @@
 \usepackage[english,russian]{babel}
 \usepackage{indentfirst}
 \usepackage{multicol}
-\usepackage[left=5mm, right=5mm, top=5mm, bottom=5mm]{geometry}
+\usepackage[left=10mm, right=10mm, top=10mm, bottom=10mm]{geometry}
 \usepackage[normalem]{ulem}
 
 %\usepackage{setspace}
@@ -11,141 +11,235 @@
 
 \pagenumbering{gobble}
 
-\usepackage{enumitem}
+\usepackage{enumitem} % Do not indent lists and for
 \setlist{nosep}
+
+
+\newlength{\OriginalParIndent}
+\OriginalParIndent=\the\parindent % Remember original parindent
+%\showthe\parindent
+%\showthe\tmp
+\setlength{\parindent}{0pt} % Do not indent every paragraph
+
+
+\setcounter{secnumdepth}{1} % Enumerate only Sections (1) and SubSecions (2)
 
 \renewcommand{\baselinestretch}{0.97}
 \newcommand\ex[1]{\textit{\textbf{{#1}}}}
 \newcommand\sex[1]{\textit{\textbf{{\small {#1}}}}}
 
 \begin{document}
-\twocolumn[]
+
+%================================================================================================
+%================================================================================================
+%================================================================================================
+\twocolumn[\section{SpeakOut Intermediate}]
+
+\subsection{Unit 1}
+\subsubsection{Idioms}
+
+\begin{description}[leftmargin=5cm,style=nextline,before={\renewcommand\makelabel[1]{##1 ~---}}]
+\item[\ex{Take part in something}] принять участие в чём-то
+\item[\ex{Take after someone}] родиться похожим на
+\item[\ex{Take responsability for}] брать ответсвенность
+\item[\ex{Get on with someone}] ладить с
+\item[\ex{Do someone a favor}] сделать одолжение
+%\item[\ex{Something}] Text. More text.More text.More text. More text. More text.
+%                      More text. More text. More text. More text. More text. More text.
+%                      More text.
+\end{description}
 
 
-\section{Unit 1}
-\textbf{\underline{Idioms}}
 
-\begin{enumerate}
+%================================================================================================
+%================================================================================================
+%================================================================================================
+\subsection{Unit 2}
+\subsubsection{Preposition + expressions of time}
+To help you remember which preposition of time to use, try to memorise this: \textbf{on} M\textbf{on}day; \textbf{in} w\textbf{in}ter; \textbf{at} th\textbf{at} time.
+
+\begin{description}[leftmargin=1.2cm,style=nextline,before={\renewcommand\makelabel[1]{##1 ~=}}]
+\item[\textbf{on}] for specific days
+\item[\textbf{in}] for time periods
+\item[\textbf{at}] for specific times
+\end{description}
+
+
+\begin{description}[leftmargin=2.8cm,style=nextline,before={\renewcommand\makelabel[1]{##1 ~---}}]
+\item[\ex{On my own}] alone, not whith other people
+\item[\ex{On purpose}] it was not mistake
+\item[\ex{In a hurry}] cannot wait
+\end{description}
+
+
+\subsubsection{Vocabulary}
+\begin{description}[leftmargin=2.3cm,style=nextline,before={\renewcommand\makelabel[1]{##1 ~---}}]
+\item[\ex{Violent}] насильственный
+\item[\ex{Strike}] забастовка, удар
+\item[\ex{Fugitive}] беглец
+\item[\ex{Hostages}] заложники
+\item[\ex{Prisoner}] заключённый
+\end{description}
+
+
+
+%================================================================================================
+%================================================================================================
+%================================================================================================
+\subsection{Unit 3}
+\subsubsection{Idioms}
+\begin{description}[leftmargin=4.5cm,style=nextline,before={\renewcommand\makelabel[1]{##1 ~---}}]
+\item[\ex{We are running out of time}] время на исходе
+\end{description}
+
+\begin{description}[leftmargin=4.8cm,style=nextline,before={\renewcommand\makelabel[1]{##1 ~---}}]
 %\itemsep -0.2em
-  \item \ex{Take part in something}~--- принять участие в чём-то
-  \item \ex{Take after someone}~--- родиться похожим на
-  \item \ex{Take responsability for}~--- брать ответсвенность
-  \item \ex{Get on with someone}~---ладить с
-  \item \ex{Do someone a favor}~--- сделать одолжение
-\end{enumerate}
+\item[\ex{Go window shopping}] прогуливаться по магазинам, разглядывать ветрины
+\item[\ex{Let your hair down}] позволить себе вести себя более спокойно и расслаблено
+\item[\ex{Be in two minds}] колебаться, не знать на что решиться
+\item[\ex{Work against the clock}] работать не покладая рук
+\item[\ex{It's not my cup of tea}] это не в моём вкусе
+\item[\ex{Close to my heart}] близко моему сердцу
+\item[\ex{Put my foot in it}] дать маху
+\end{description}
+
+\begin{description}[leftmargin=3.3cm,style=nextline,before={\renewcommand\makelabel[1]{##1 ~---}}]
+\item[\ex{Break the ice}] положить начало
+\item[\ex{Learn by heart}] учить на изусть
+\item[\ex{Travel light}] путешествовать на-легке
+\item[\ex{Go grey}] седеть
+\item[\ex{Small talk}] болтовня
+\item[\ex{On our mind}] на уме
+\item[\ex{In hot water}] в беде (по своей вине)
+\end{description}
 
 
 
+ %================================================================================================
+ %================================================================================================
+%================================================================================================
+\subsection{Unit 4}
+\subsubsection{Confusing words}
 
-\section{Unit 2}
+\begingroup
+\parindent=\OriginalParIndent
 
-\textbf{\underline{Preposition + expressions of time}}
+\ex{job~--- work}. \textbf{Work} is what you do to earn money: \textit{What kind of work does he do?}
+A \textbf{job} is the particular type of work that you do: \textit{Sam's got a job as a waiter}.
+\textbf{Job} can be plural, but \textbf{work} cannot.
 
-To help you remember which preposition of time to use, try to memorise this: \textbf{on} M\textbf{on}day; \textbf{in} w\textbf{in}ter; \textbf{at} th\textbf{at} time. 
-
-\textbf{on} = for specific days
-
-\textbf{in} = for time periods
-
-\textbf{at} = for specific times
-
-\begin{enumerate}
-  \item \ex{On my own}~--- alone, not whith other people
-  \item \ex{On purpose}~--- it was not mistake
-  \item \ex{In a hurry}~--- cannot wait
-\end{enumerate}
-
-\textbf{\underline{Vocabulary}}
-
-\ex{Violent}~-- насильственный
-
-\ex{Strike}~-- удар
-
-\ex{Fugitive}~-- беглец
-
-\ex{Hostages}~-- заложники
-
-\ex{Prisoner}~-- заключённый
+\ex{remember~--- remind}. If you \textbf{remember} something, a fact or event from the past,
+or something you earlier decided to do, comes back into you mind:
+\textit{He suddenly remembered he had to go to the bank}. If someone \textbf{reminds} you to
+do something, or something reminds you of something, they make you remember it:
+\textit{Remind me to call him later today}.
 
 
+\ex{forget~--- leave}. If you want to talk about the place where you have left something, use the
+verb \textbf{leave}, not the verb \textbf{forget}. Compare: \textit{I've forgotten my book and I've
+forgotten my keys.} \textit{I've left my keys in the car}.\\
+Don't say: \textit{\sout{I've forgotten my keys in the car.}}
+
+\ex{hear~--- listen}.
+
+\ex{earn~--- win}.
+
+\ex{fun~--- funny}. Use \textbf{fun} to talk about events and activities that are enjoyable, such as
+games and parties: \textit{Let's go to the beach and have some fun.} \textbf{Funny} is an adjective
+that describes someone or something that makes you laugh: \textit{Bob's jokes are really funny.}
+
+\ex{miss~--- lose}. \textbf{miss}~--- пропустить; \textbf{lose}~--- потерять.
+
+\endgroup
 
 
-
-\section{Unit 3}
-\textbf{\underline{Idioms}}
-
-\begin{enumerate}
-%\itemsep -0.2em
-  \item \ex{Break the ice}~--- положить начало 
-  \item \ex{Learn by heart}~--- учить на изусть
-  \item \ex{Go window shopping}~--- прогуливаться по магазинам, разглядывать ветрины
-  \item \ex{Travel light}~--- путешествовать на-легке
-  \item \ex{Let your hair down}~--- позволить себе вести себя более спокойно и расслаблено
-  \item \ex{Be in two minds}~--- колебаться, не знать на что решиться
-  \item \ex{Go grey}~--- седеть
-  \item \ex{Work against the clock}~--- работать не покладая рук
-  \item \ex{Small talk}~--- болтовня
-  \item \ex{On our mind}~--- на уме
-  \item \ex{It's not my cup of tea}~--- это не в моём вкусе
-  \item \ex{Close to my heart}~--- близко моему сердцу
-  \item \ex{In hot water}~--- в беде (по своей вине)
-  \item \ex{Put my foot in it}~--- дать маху
-  \item \ex{We are running out of time}~--- время на исходе
-\end{enumerate}
-
- 
- 
-
-
-\section{Unit 4}
-
-\textbf{\underline{Confusing words}}
-\begin{enumerate}
-  \item \ex{job~--- work}
-  
-  \textbf{Work} is what you do to earn money: \textit{What kind of work does he do?} A \textbf{job} is the particular type of work that you do: \textit{Sam's got a job as a waiter}. \textbf{Job} can be plural, but \textbf{work} cannot.
-  \item \ex{remember~--- remind}
-  
-  If you \textbf{remember} something, a fact or event from the past, or something you earlier decided to do, comes back into you mind: \textit{He suddenly remembered he had to go to the bank}. If someone \textbf{reminds} you to do something, or something reminds you of something, they make you remember it: \textit{Remind me to call him later today}.
-  \item \ex{forget~--- leave}
-  
-  If you want to talk about the place where you have left something, use the verb \textbf{leave}, not the verb \textbf{forget}. Compare: \textit{I've forgotten my book and I've forgotten my keys.} \textit{I've left my keys in the car}. 
-  
-  Don't say: \textit{\sout{I've forgotten my keys in the car.}}
-  \item \ex{hear~--- listen}
-  \item \ex{fun~--- funny}
-  
-  Use \textbf{fun} to talk about events and activities that are enjoyable, such as games and parties: \textit{Let's go to the beach and have some fun.} \textbf{Funny} is an adjective that describes someone or something that makes you laugh: \textit{Bob's jokes are really funny.}
-  \item \ex{miss~--- lose}
-  
-  \textbf{miss}~--- пропустить; \textbf{lose}~--- потерять
-  \item \ex{earn~--- win}  
-\end{enumerate}
-
-\textbf{\underline{Vocabulary: VERY -> withour VERY}}
+\subsubsection{Vocabulary: VERY -> withour VERY}
+\begingroup
+\setlength{\columnsep}{19pt}
 \begin{multicols}{2}
-\begin{enumerate}
-  \item good: wonderful, amazing, brilliant
-  \item big: enormous, giant
-  \item small: tiny
-  \item tired: exhausted
-  \item hot: boiling
-  \item cold: freezing
-  \item tasty: delicious
-  \item angry: furious
-  \item interesting: fascinating
-  \item pretty: beautyful
-  \item difficult: impossible
-\end{enumerate}
-\end{multicols}
+\begin{description}[leftmargin=1.6cm,style=nextline,before={\renewcommand\makelabel[1]{##1 ~---}}]
+  \item[good] wonderful, amazing, brilliant
+  \item[big] enormous, giant
+  \item[small] tiny
+  \item[tired] exhausted
+  \item[hot] boiling
+  \item[cold] freezing
+  \item[tasty] delicious
+  \item[angry] furious
+  \item[pretty] beautyful
+\end{description}
 
-\textbf{\underline{Covering letter}}
-\begin{enumerate}
-  \item \ex{Regarding your advertisement\dots}~--- about
-  \item \ex{I would like to submit an application for the\dots}~--- to apply for the job
-  \item \ex{I meet all the requirements\dots}~--- I think I would be good for the job
-  \item \ex{Proven ability in\dots}~--- I have shown that I am able to do this
-  \item \ex{\dots to hearing from you at your earliest convenience}~--- as soon as you have the opportunity
-\end{enumerate}
+\begin{description}[leftmargin=2.3cm,style=nextline,before={\renewcommand\makelabel[1]{##1 ~---}}]
+  \item[interesting] fascinating
+  \item[difficult] impossible
+\end{description}
+\end{multicols}
+\endgroup
+
+
+
+\subsubsection{Covering letter}
+
+\begin{description}[leftmargin=\OriginalParIndent,style=nextline,before={\renewcommand\makelabel[1]{##1 ~---}}]
+  \item[\ex{Regarding your advertisement\dots}] about
+  \item[\ex{I would like to submit an application for the\dots}] to apply for the job
+  \item[\ex{I meet all the requirements\dots}] I think I would be good for the job
+  \item[\ex{Proven ability in\dots}] I have shown that I am able to do this
+  \item[\ex{\dots to hearing from you at your earliest convenience}] as soon as you have the opportunity
+\end{description}
+
+
+
+
+
+
+
+
+
+
+
+
+%================================================================================================
+%================================================================================================
+%================================================================================================
+
+\newpage
+
+\twocolumn[\section{The United Kingdom. 2016.}]
+
+\subsection{Phrases from speech}
+
+\begin{description}[leftmargin=\OriginalParIndent,style=nextline,before={\renewcommand\makelabel[1]{##1 ~--}}]
+\item[] Do many people here \sout{ride} \textbf{commute / travel} to London?
+\item[] We drink \sout{much} \textbf{a lot of} tea.
+\item[] \sout{Two times in a week} \textbf{Twice} a week.
+\item[] \sout{Previous year.} \textbf{Last} year.
+\item[] We can show you one \sout{our} \textbf{of ours} videos.
+\item[] You \sout{may not} \textbf{doesn't (need / have) to} search.
+\item[] I'll make two \sout{circles} \textbf{circuits} around the church.
+\item[] A car was the only \sout{mean} \textbf{means}, you could use to get out of country.
+\item[] \sout{Have he married?} \textbf{Did he get married?}
+\item[] Zebra is an animal, that has black and white \sout{lanes} \textbf{stripes} on its body.
+\item[] As soon as we \sout{entered} \textbf{got on} the train.
+\item[] We were impressed \sout{that there was a very quiet train} \textbf{by
+        how quiet the train was}.
+\item[] Which one? \sout{Second one.} \textbf{Later (formerly).}
+\item[] Finally, we \sout{exited on} \textbf{traveled to} Westminster station.
+\item[] Сделать мэйкап: \sout{Make make-up.} \textbf{Do make-up. / Put on make-up.}
+\item[] There are two \sout{parts} \textbf{groups} of people in Korolev.
+\item[] Подстричь газон: \sout{Cut the grass.} \textbf{Mow the lawn}.
+\item[] She wears a coat to \sout{protect herself from cold} \textbf{keep warm}.
+\item[] \sout{Ask help. Ask to help.} \textbf{Ask for help}.
+
+\item[] That would work as well.
+\item[] Exam: Pass an exam. Fail an exam. Do well / badly in an exam.
+\item[] Take the second right. Excuse me, please, could you (give me directions) /
+        (tell me the way) to The London Eye?
+\item[] Не могли бы вы поставить (тарелку, например. За столом): Could you please, put it down.
+\item[] Ask something in caffee: Please, could I have a green tea? I would like a green tea, please.
+\item[] Она подсадила меня на YouTube: She has got me addicted to YouTube.
+\end{description}
+
+
 
 \end{document}
