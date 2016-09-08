@@ -9,6 +9,9 @@
 % Two-columns
 \usepackage{multicol}
 
+% Cells spanning several row in tables
+\usepackage{multirow}
+
 
 \usepackage[normalem]{ulem}
 
@@ -200,7 +203,7 @@ that describes someone or something that makes you laugh: \textit{Bob's jokes ar
 \endgroup
 
 
-\subsubsection{Vocabulary: VERY --> withour VERY}
+\subsubsection{Vocabulary: VERY --> without VERY}
 \begingroup
 \setlength{\columnsep}{19pt}
 \begin{multicols}{2}
@@ -320,6 +323,13 @@ that describes someone or something that makes you laugh: \textit{Bob's jokes ar
   \item[Wages] зарплата.
   \item[Renovate] обновленная кухня, реконструированный парк~--- \textit{renovated kitchen}, \textit{renovated park}.
   \item[Do a chore] делать повседневную работу по дому.
+
+  \item[Flat] квартира в многоквартирном доме.
+  \item[Apartment building] многоквартирные дом.
+  \item[House] частный дом.
+
+  \item[Go/come] TODO.
+  \item[Take/bring] TODO.
 \end{description}
 
 \subsubsection{Phrases verbs}
@@ -339,30 +349,24 @@ that describes someone or something that makes you laugh: \textit{Bob's jokes ar
 \end{description}
 
 \subsubsection{Saying, idioms}
-\begin{description}[leftmargin=\OriginalParIndent,style=nextline,before={\renewcommand\makelabel[1]{##1~---}}]
-  \item[Bad hair day] a day on which everything seems to go wrong.
-  \item[Can't stand / Can't bear] means to be unable to tolerate somebody or something.
-\end{description}
-
-\subsubsection{Houses / Flats}
-\begin{description}[leftmargin=\OriginalParIndent,style=nextline,before={\renewcommand\makelabel[1]{##1~---}}]
-  \item[Flat] квартира в многоквартирном доме.
-  \item[Apartment building] многоквартирные дом.
-  \item[House] частный дом.
-\end{description}
-
-\subsubsection{Go/come, take/bring}
-todo
+\begin{ItemizeWithOrigParIndent}
+  \item \ex{Bad hair day}~--- a day on which everything seems to go wrong.
+  \item \ex{Can't stand / Can't bear}~--- means to be unable to tolerate somebody or something.
+  \item \ex{Watched pot never boils}~---something we wait for with impatient attention seems to take forever.
+  \item \ex{Jump on the bandwagon}~--- if you jump on the bandwagon, you join a growing movement in support
+  of someone or something when that movement is seen to be about to become successful.
+  \item \ex{The pot calling the kettle black}~---an idiom used to claim that a person is guilty of the very thing of which they accuse another.
+\end{ItemizeWithOrigParIndent}
 
 \subsubsection{Degree of likability}
-
 \begin{itemize}
   \item Despise~--- презирать.
   \item Abhor/Detest~--- ненавидеть, питать отвращение; не выносить, не терпеть.
   \item Hate.
   \item Dislike/don't like.
-  \item To be easy: I am easy (informal).
-  \item Do not mind~--- it's ok. Examples:
+  \item To be easy: \textit{I am easy} (informal).
+  \item Do not mind~--- it's ok. To \textit{mind} something means, that you are distressed, annoyed or worried
+  by it. Examples:
   \begin{itemize}
     \item \textit{Do you mind V\textsubscript{ing}? No, I don't mind.}
     \item \textit{Do you mind helping me with my homework? I don't mind helping you with\dots}
@@ -372,6 +376,8 @@ todo
   \item Love.
   \item Adore.
 \end{itemize}
+\vspace{-\parskip}
+It seems that all these words must be followed by gerund or noun, see \ref{sed:Verbs_followed_by_gerunds}.
 
 
 %================================================================================================
@@ -389,7 +395,7 @@ todo
 
 %================================================================================================
 \subsection{Plural forms}
-Nouns ending in -o: \textit{tomatoes}.\\
+Nouns ending in -o: \textit{tomato\ex{es}}.\\
 Irregular: \ex{foot~-- feet}, \ex{tooth~-- teeth}.\\
 Does not change in plural: \ex{deer}, \ex{shrimp}, \ex{moose}, \ex{fish}.
 
@@ -460,24 +466,28 @@ at the end
 
 \subsubsection{Buildings / Places.}
 Places used \textbf{without the}:
-\begin{description}[labelindent=\OriginalParIndent,leftmargin=3.6cm,style=nextline,before={\renewcommand\makelabel[1]{##1:}}]
-  \item[Streets, roads] Fleet Street.
-  \item[Name + building] Oxford University.
-  \item[Airports] Heathrow airport.
-  \item[Parks] Hyde Park.
+\begin{description}[leftmargin=2.9cm,style=nextline,before={\renewcommand\makelabel[1]{##1:}}]
+  \item[Streets, roads] \za Fleet Street.
+  \item[Airports] \za Heathrow airport.
+  \item[Parks] \za Hyde Park.
+  \item[Squares] \za Times Square.
 \end{description}
+\vspace{-\parskip}
+Name + building: \textit{\za Oxford University}, \textit{\za San Diego Zoo}, but \textit{\ex{The} Royal Academy} and \textit{\ex{The} Provincial Courts} because \textit{Royal} and \textit{Provincial} are adjectives.
+
+
 
 
 \vspace{2mm}
 Places used \textbf{with the}:
-\begin{description}[labelindent=\OriginalParIndent,leftmargin=3.9cm,rightmargin=\OriginalParIndent,style=nextline,before={\renewcommand\makelabel[1]{##1:}}]
+\begin{description}[leftmargin=3.9cm,rightmargin=\OriginalParIndent,style=nextline,before={\renewcommand\makelabel[1]{##1:}}]
   \item[Hotels] The Hilton Hotel.
   \item[Theaters, cinemas, operas] The Sydney Opera.
   \item[Museums] The British Museum.
   \item[Monuments, towers] The London Eye.
   \item[Names with ``of''] The University of Oxford. (But, Oxford University, see above.)
 \end{description}
-
+\vspace{-\parskip}
 If any of those (restaurant, hotel, \dots) named after people, whose name ends with \ex{-s}, \ex{-s’} or \ex{-’s} do not use \ex{the}: \ex{\za St James’ Church}.
 
 
@@ -517,7 +527,9 @@ Groups of islands.\\
 Mountain ranges.
 \end{minipage}\vspace{\parskip}
 
-We also \textbf{use \ex{the}} with compass directions: \textit{The North}, \textit{The North-East}, \textit{The East}, \dots\\
+We also \textbf{use \ex{the}} with compass directions: \textit{The North}, \textit{The North-East}, \textit{The East}, \dots: \textit{\ex{The} North of Germany}, \textit{\ex{The} East of Africa}, \dots\\
+Do not mix up situations in which compass direction is part of name:
+\textit{\za South America} (name of continent), \dots\\
 But \textbf{do not use \ex{the}} with \textit{Southern}, \textit{Northern}, \dots
 
 
@@ -537,10 +549,10 @@ But \textbf{do not use \ex{the}} with \textit{Southern}, \textit{Northern}, \dot
 \end{ItemizeWithOrigParIndent}
 
 \begin{ItemizeWithOrigParIndent}
-  \item \ex{On} train
-  \item \ex{On} the underground
-  \item \ex{By} bus
-  \item \ex{On} foot
+  \item \ex{On} train.
+  \item \ex{On} the underground.
+  \item \ex{By} bus.
+  \item \ex{On} foot.
 \end{ItemizeWithOrigParIndent}
 
 
@@ -557,7 +569,7 @@ the fridge~--- fridge is closed.
 \begin{ItemizeWithOrigParIndent}
   \item Sorry about \ex{that}.
   \item \ex{That} was a terrible film. (But \textit{\ex{This} is a terrible film}~---
-  is~--- we are watching it now).
+  \textit{is}~--- we are watching it now).
   \item I didn't know \ex{that}.
   \item \ex{That's} wonderful.
 \end{ItemizeWithOrigParIndent}
@@ -574,8 +586,8 @@ As a preposition \ex{besides} has the same meaning as ``in addition to'' and ``a
 \textit{\ex{Besides} the clarinet, she also plays the flute.}
 
 Do not mix:\\
-Beside = next to, near, close to\\
-Besides = in addition to.
+Beside~--- next to, near, close to.\\
+Besides~--- in addition to.
 
 Let's pretend you had a long day at work, and you are tired. You just want to stay at home and watch TV. Your friend calls and asks ``do you want to join me for a dinner?''.
 Your answer: \textit{No, thanks. Today was a long day and I'm tired. \ex{Besides}, I just ate dinner.}
@@ -600,12 +612,94 @@ Correction bad/incorrect relative clauses:
 
 
 %================================================================================================
-\subsection{Verbs that are followed by V\textsubscript{ing} only.}
+\subsection{Verbs followed by gerunds only.} \label{sed:Verbs_followed_by_gerunds}
+These verbs are commonly followed by gerunds:
+\vspace{-4\parskip}
+\begin{multicols}{4}
+\begin{itemize}[leftmargin=3.05mm]
+  \item postpone
+  \item delay
+  \item finish
+  \item feel like
+  \item enjoy
+  \item tolerate
+  \item imagine
+  \item can't help
+  \item involve
+  \item avoid
+  \item keep
+  \item anticipate
+  \item complete
+  \item admit
+  \item report
+  \item defend
+  \item mention
+  \item deny
+  \item suggest
+  \item discuss
+  \item recall
+  \item consider
+  \item recommend
+  \item risk
+  \item resist
+  \item mind
+  \item practice
+  \item despise
+  \item dislike
+  \item appreciate
+  \item quit
+\end{itemize}
+\end{multicols}
+\vspace{-5\parskip}
 \textit{Doctor \ex{recommended} \sout{you} \ex{eating} healthy food.}\\
 \ex{Feel like} is always followed by a gerund.\\
-To \textit{\ex{feel like} doing something} means to be in the mood to do something.
+To \textit{\ex{feel like} doing something} means to be in the mood to do something.\\
+\ex{can't help doing}~--- не мочь удержаться от чего-либо.\\
+\textit{He \ex{admitted} stealing money from her pursue}~--- Он признался в краже денег из её кошелька.
 
 
+
+
+
+
+
+
+%================================================================================================
+\subsection{Wishes.}
+
+\begin{tabular}{l@{\hspace{5.5mm}} l@{\hspace{4mm}} l}
+\hline
+future  & \textit{would + inf}   & \multirow{2}{*}{\textit{could + inf}}        \\
+present & past simple   &                                     \\
+\hline
+past    & past perfect  & \textit{could + have + V\textsubscript{3}}   \\
+\hline
+\end{tabular}
+
+\textbf{Notes:}
+
+\textit{could + have + V\textsubscript{3}}~--- often means disappointment, and definitely impossible: \textit{I wish I could have gone to the party}.
+
+\textit{wish \dots wouldn't \dots}~--- for complains about something that happens over and over again: \textit{I wish out neighbours wouldn't play that terrible music}.
+
+\textbf{Be careful with future!}\\
+It is not actually future.
+\textit{would} in table above is \textit{past(will)}, where ''will`` means \textbf{``show willingness''}. That's why following sentences are incorrect:
+\begin{ItemizeWithOrigParIndent}
+  \item \textit{\sout{I wish I would know her.}} Дословный перевод: \textit{Я желаю что бы я зажелал её узнать}.
+  \item \textit{\sout{I wish I would have a new phone.}} Дословный перевод: \textit{Я желаю что бы я зажелал заиметь новый телефон}.
+\end{ItemizeWithOrigParIndent}
+\dots and should be fixed as follows:
+\begin{ItemizeWithOrigParIndent}
+  \item \textit{I wish I knew her.}
+  \item \textit{I wish I had a new phone.}
+\end{ItemizeWithOrigParIndent}
+
+Where ``will'' means a future event, we cannot use ``wish'' and must use ``hope'':
+\begin{ItemizeWithOrigParIndent}
+  \item \textit{There's a strike tomorrow. I hope some buses will still be running.}
+  \item \textit{I hope everything will be fine in your new job.}
+\end{ItemizeWithOrigParIndent}
 
 
 
