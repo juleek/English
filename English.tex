@@ -1,7 +1,10 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
-\usepackage[left=10mm, right=10mm, top=10mm, bottom=10mm, showframe]{geometry}
+\usepackage[left=10mm, right=10mm, top=10mm, bottom=10mm]{geometry}
+
+%Show bad boxes
+\overfullrule=5pt
 
 % DO indent first paragraph
 \usepackage{indentfirst}
@@ -58,24 +61,28 @@
 % ==========================================
 % Show two column boundaries
 % ==========================================
-\usepackage{etoolbox}
-\newlength\Fcolumnseprule
-\setlength\Fcolumnseprule{0.4pt}
-\makeatletter
-\newcommand\ShowInterColumnFrame{
-\patchcmd{\@outputdblcol}
-  {{\normalcolor\vrule \@width\columnseprule}}
-  {\vrule \@width\Fcolumnseprule\hfil
-    {\normalcolor\vrule \@width\columnseprule}
-    \hfil\vrule \@width\Fcolumnseprule
-  }
-  {}
-  {}
-}
-\makeatother
-\ShowInterColumnFrame
+%\usepackage{etoolbox}
+%\newlength\Fcolumnseprule
+%\setlength\Fcolumnseprule{0.4pt}
+%\makeatletter
+%\newcommand\ShowInterColumnFrame{
+%\patchcmd{\@outputdblcol}
+%  {{\normalcolor\vrule \@width\columnseprule}}
+%  {\vrule \@width\Fcolumnseprule\hfil
+%    {\normalcolor\vrule \@width\columnseprule}
+%    \hfil\vrule \@width\Fcolumnseprule
+%  }
+%  {}
+%  {}
+%}
+%\makeatother
+%\ShowInterColumnFrame
 % ==========================================
 
+
+
+\hyphenation{band-wa-gon}
+\hyphenation{Ro-yal}
 
 \begin{document}
 
@@ -96,7 +103,7 @@
 \begin{description}[leftmargin=5cm,style=nextline,before={\renewcommand\makelabel[1]{##1~---}}]
   \item[\ex{Take part in something}] принять участие в чём-то
   \item[\ex{Take after someone}] родиться похожим на
-  \item[\ex{Take responsability for}] брать ответсвенность
+  \item[\ex{Take responsability for}] брать ответсвенность за
   \item[\ex{Get on with someone}] ладить с
   \item[\ex{Do someone a favor}] сделать одолжение
 \end{description}
@@ -143,8 +150,8 @@ To help you remember which preposition of time to use, try to memorise this: \te
   \item[\ex{We are running out of time}] время на исходе.
 \end{description}
 \vspace{-\parskip}
-\begin{description}[leftmargin=4.8cm,style=nextline,before={\renewcommand\makelabel[1]{##1~---}}]
-  \item[\ex{Go window shopping}] прогуливаться по магазинам, разглядывать ветрины.
+\begin{description}[leftmargin=4.7cm,style=nextline,before={\renewcommand\makelabel[1]{##1~---}}]
+  \item[\ex{Go window shopping}] разглядывать ветрины, прогуливаться по магазинам.
   \item[\ex{Let your hair down}] позволить себе вести себя более спокойно и расслаблено.
   \item[\ex{Be in two minds}] колебаться, не знать на что решиться.
   \item[\ex{Work against the clock}] работать не покладая рук.
@@ -180,8 +187,8 @@ A \textbf{job} is the particular type of work that you do: \textit{Sam's got a \
 
 \ex{remember~--- remind}. If you \textbf{remember} something, a fact or event from the past,
 or something you earlier decided to do, comes back into you mind:
-\textit{He suddenly \ex{remembered} he had to go to the bank}. If someone \textbf{reminds} you to
-do something, or something reminds you of something, they make you remember it:
+\textit{He suddenly \ex{remembered} he had to go to the bank}. If someone or something \textbf{reminds} you
+of something, they make you remember it:
 \textit{\ex{Remind} me to call him later today}.
 
 
@@ -229,13 +236,14 @@ that describes someone or something that makes you laugh: \textit{Bob's jokes ar
 
 
 \subsubsection{Covering letter}
-\begin{description}[leftmargin=\OriginalParIndent,style=nextline,before={\renewcommand\makelabel[1]{##1~---}}]
-  \item[\ex{Regarding your advertisement\dots}] about
-  \item[\ex{I would like to submit an application for the\dots}] to apply for the job
-  \item[\ex{I meet all the requirements\dots}] I think I would be good for the job
-  \item[\ex{Proven ability in\dots}] I have shown that I am able to do this
-  \item[\ex{\dots to hearing from you at your earliest convenience}] as soon as you have the opportunity
-\end{description}
+\begin{ItemizeWithOrigParIndent}
+  \item \ex{Regarding your advertisement\dots}~--- about
+  \item \ex{I would like to submit an application for the\dots}~--- to apply for the job
+  \item \ex{I meet all the requirements\dots}~--- I think I would be good for the job
+  \item \ex{Proven ability in\dots}~--- I have shown that I am able to do this
+  \item \ex{I look forward to hearing from you at your earliest convenience}~--- as soon as you have the opportunity
+\end{ItemizeWithOrigParIndent}
+
 
 
 
@@ -287,7 +295,7 @@ that describes someone or something that makes you laugh: \textit{Bob's jokes ar
         (tell me the way) to The London Eye?
   \item Не могли бы вы поставить (тарелку, например. За столом): Could you please, put it down.
   \item Ask something in caffee: Please, could I have a green tea? I would like a green tea, please.
-  \item Она подсадила меня на YouTube: She has got me addicted to YouTube.
+  \item Он подсадил меня на YouTube: He has got me addicted to YouTube.
 \end{ItemizeWithOrigParIndent}
 
 
@@ -319,9 +327,10 @@ that describes someone or something that makes you laugh: \textit{Bob's jokes ar
   \item[Afterward, beforehand] не надо ставить после них существительного (в отличие от after, before),
                              например: \textit{What will you do afterwards?}
   \item[Riddle] загадка, тайна.
-  \item[Tame (squirrels)] приручённый, одомашненный; укрощённый (о животных).
+  \item[Tame (squirrels)] приручённый, одомашненный.
   \item[Wages] зарплата.
-  \item[Renovate] обновленная кухня, реконструированный парк~--- \textit{renovated kitchen}, \textit{renovated park}.
+  \item[Renovate] обновлять. \textit{Обновленная кухня}, \textit{реконструированный парк}~---
+  \textit{renovated kitchen}, \textit{renovated park}.
   \item[Do a chore] делать повседневную работу по дому.
 
   \item[Flat] квартира в многоквартирном доме.
@@ -346,6 +355,7 @@ that describes someone or something that makes you laugh: \textit{Bob's jokes ar
   \item[Hand out] раздавать.
   \item[Hand in] передавать (в руки).
   \item[Turn over] переворачивать.
+  \item[Jot down] быстро сдампить мысли на бумагу.
 \end{description}
 
 \subsubsection{Saying, idioms}
@@ -496,7 +506,7 @@ If any of those (restaurant, hotel, \dots) named after people, whose name ends w
 We do not use \ex{the} with names of companies:\\
 \textit{\za Google}, \textit{\za Adidas}.
 
-We often use \ex{the} with names of organizations and newspapers:
+We often use \ex{the} with names of organizations \& newspapers:
 \textit{\ex{The} United Nations}, \textit{\ex{The} New York Times}.
 
 
@@ -581,7 +591,7 @@ the fridge~--- fridge is closed.
 %================================================================================================
 \subsection{Linking words}
 \subsubsection{Besides}
-As a preposition \ex{besides} has the same meaning as ``in addition to'' and ``as well as''.\\
+As a preposition \ex{besides} has the same meaning as ``as well as'' and ``in addition to'' .\\
 \textit{\ex{Besides} being a magnificent chief, he also paint extremely well.}\\
 \textit{\ex{Besides} the clarinet, she also plays the flute.}
 
@@ -678,13 +688,13 @@ past    & past perfect  & \textit{could + have + V\textsubscript{3}}   \\
 
 \textbf{Notes:}
 
-\textit{could + have + V\textsubscript{3}}~--- often means disappointment, and definitely impossible: \textit{I wish I could have gone to the party}.
+\textit{could + have + V\textsubscript{3}}~--- often means disappointment (definitely impossible to fix): \textit{I wish I could have gone to the party}.
 
 \textit{wish \dots wouldn't \dots}~--- for complains about something that happens over and over again: \textit{I wish out neighbours wouldn't play that terrible music}.
 
 \textbf{Be careful with future!}\\
 It is not actually future.
-\textit{would} in table above is \textit{past(will)}, where ''will`` means \textbf{``show willingness''}. That's why following sentences are incorrect:
+\textit{would} in table above is \textit{past(will)}, where ''will`` means ``show willingness''. That's why following sentences are incorrect:
 \begin{ItemizeWithOrigParIndent}
   \item \textit{\sout{I wish I would know her.}} Дословный перевод: \textit{Я желаю что бы я зажелал её узнать}.
   \item \textit{\sout{I wish I would have a new phone.}} Дословный перевод: \textit{Я желаю что бы я зажелал заиметь новый телефон}.
